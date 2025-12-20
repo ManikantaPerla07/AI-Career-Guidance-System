@@ -1,0 +1,20 @@
+CAREER GUIDANCE SYSTEM - MODEL SUMMARY
+
+Algorithm            : Gradient Boosting Classifier
+Test Accuracy         : 97.64%
+Features Used         : 25
+Career Classes        : 72
+
+Top Influencing Factors:
+- Performance Score
+- Naturalist Aptitude
+- Musical & Linguistic Skills
+- Teamwork & Social Skills
+
+Validation:
+- 5-Fold Cross Validation
+- Stable accuracy across folds
+- No data leakage
+
+Status:
+- Production Ready

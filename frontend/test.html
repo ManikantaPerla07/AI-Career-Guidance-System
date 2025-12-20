@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Career Test | CareerAI</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Theme Toggle -->
+  <script src="assets/js/theme.js" defer></script>
+
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-gray-800 shadow fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-indigo-400">CareerAI</h1>
+    <div class="space-x-6">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="test.html" class="text-indigo-400 font-semibold">Test</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleTheme()" class="ml-4 px-3 py-1 rounded bg-indigo-600">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<section class="pt-32 pb-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
+
+<!-- ================= FORM ================= -->
+<div class="lg:col-span-2 space-y-16">
+
+  <!-- APTITUDE -->
+  <div>
+    <h2 class="text-3xl font-bold mb-6">🧠 Aptitude Assessment (0–20)</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- SLIDER TEMPLATE -->
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Linguistic</label>
+          <span id="linguisticVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="linguisticVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Musical</label>
+          <span id="musicalVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="musicalVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Bodily</label>
+          <span id="bodilyVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="bodilyVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Logical Mathematical</label>
+          <span id="logicalVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="logicalVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Spatial Visualization</label>
+          <span id="spatialVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="spatialVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Interpersonal</label>
+          <span id="interpersonalVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="interpersonalVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Intrapersonal</label>
+          <span id="intrapersonalVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="intrapersonalVal.innerText=this.value">
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <div class="flex justify-between">
+          <label>Naturalist</label>
+          <span id="naturalistVal" class="text-indigo-400 font-bold">10</span>
+        </div>
+        <input type="range" min="0" max="20" value="10"
+          class="w-full accent-indigo-500"
+          oninput="naturalistVal.innerText=this.value">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PERFORMANCE -->
+  <div>
+    <h2 class="text-3xl font-bold mb-6">📊 Performance Evaluation</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- RADIO TEMPLATE -->
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Project Performance</h4>
+        <label><input type="radio" name="project_performance" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="project_performance" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="project_performance" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Practical Skills</h4>
+        <label><input type="radio" name="practical_skills" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="practical_skills" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="practical_skills" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Research Interest</h4>
+        <label><input type="radio" name="research_interest" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="research_interest" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="research_interest" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Communication Skills</h4>
+        <label><input type="radio" name="communication_skills" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="communication_skills" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="communication_skills" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Leadership Qualities</h4>
+        <label><input type="radio" name="leadership_qualities" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="leadership_qualities" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="leadership_qualities" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Teamwork</h4>
+        <label><input type="radio" name="teamwork" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="teamwork" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="teamwork" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Time Management</h4>
+        <label><input type="radio" name="time_management" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="time_management" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="time_management" value="BEST"> BEST</label>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-xl">
+        <h4 class="font-semibold mb-3">Self Learning</h4>
+        <label><input type="radio" name="self_learning" value="POOR"> POOR</label>
+        <label class="ml-4"><input type="radio" name="self_learning" value="AVG" checked> AVG</label>
+        <label class="ml-4"><input type="radio" name="self_learning" value="BEST"> BEST</label>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BUTTON -->
+  <button id="predictBtn"
+    class="w-full py-5 rounded-xl text-xl font-bold
+    bg-gradient-to-r from-indigo-500 to-purple-600">
+    🚀 Get AI Career Prediction
+  </button>
+
+  <!-- RESULTS -->
+  <div id="resultBox" class="mt-14 hidden">
+    <h3 class="text-3xl font-bold mb-6">🎯 Top Career Matches</h3>
+    <div id="resultsList" class="grid md:grid-cols-2 gap-6"></div>
+  </div>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="bg-gray-800 p-6 rounded-xl sticky top-32 h-fit">
+  <h3 class="font-bold mb-4">📈 Assessment Info</h3>
+  <ul class="text-sm text-gray-300 space-y-2">
+    <li>✔ 8 Aptitude Dimensions</li>
+    <li>✔ 8 Performance Metrics</li>
+    <li>✔ Gradient Boosting ML</li>
+    <li class="text-indigo-400">Accuracy: 97.6%</li>
+  </ul>
+</div>
+
+</section>
+
+<script src="assets/js/test.js"></script>
+
+</body>
+</html>

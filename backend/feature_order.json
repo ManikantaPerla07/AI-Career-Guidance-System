@@ -1,0 +1,33 @@
+{
+    "model": "GradientBoostingClassifier",
+    "feature_count": 25,
+    "feature_order": [
+        "Linguistic",
+        "Musical",
+        "Bodily",
+        "logical_mathematical",
+        "spatial_visualization",
+        "Interpersonal",
+        "Intrapersonal",
+        "Naturalist",
+        "Project_Performance",
+        "Practical_Skills",
+        "Research_Interest",
+        "Communication_Skills",
+        "Leadership_Qualities",
+        "Teamwork",
+        "Time_Management",
+        "Self_Learning",
+        "total_aptitude",
+        "aptitude_diversity",
+        "intelligence_index",
+        "creativity_index",
+        "physical_index",
+        "social_index",
+        "performance_score",
+        "is_high_performer",
+        "cluster"
+    ],
+    "test_accuracy": 0.9763888888888889,
+    "created_on": "2025-12-19T20:48:25.278496"
+}
