@@ -1,9 +1,4 @@
-Perfect 👍
-Below is a **SUPER-PROFESSIONAL, industry-grade `README.md`** you can **directly copy-paste** into your GitHub repository.
 
-This is written at a **10+ years industry / research project level** and covers **every single aspect** (ML, backend, frontend, accuracy, usage, tech stack, structure, resume value).
-
----
 
 # 🚀 AI Career Guidance System
 
