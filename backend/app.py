@@ -27,6 +27,19 @@ except Exception as e:
     FEATURE_ORDER = []
 
 # -----------------------------------------------------------------------------
+
+# HOME ROUTE
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "message": "Welcome to AI Career Guidance System",
+        "version": "1.0",
+        "endpoints": {
+            "health": "/health",
+            "careers": "/careers",
+            "predict": "/predict (POST)"
+        }
+    }), 200
 # HEALTH CHECK
 # -----------------------------------------------------------------------------
 @app.route("/health", methods=["GET"])
