@@ -299,3 +299,23 @@ This project is for **educational & academic purposes**.
 All rights reserved © 2025.
 
 
+
+
+## Deployment on Render (Free) - LIVE AND ACCESSIBLE TO EVERYONE
+
+Your AI Career Guidance System is deployment-ready! Share a live link with anyone.
+
+### Quick Deployment in 5 Minutes
+
+**Step 1:** Go to https://render.com and sign up with GitHub
+
+**Step 2:** Click "New" → "Web Service" → Select this repository
+
+**Step 3:** Configure:
+- Root Directory: backend
+- Build: pip install -r requirements.txt  
+- Start: gunicorn app:app
+
+**Step 4:** Deploy and share your live URL!
+
+Your app will be accessible at: https://your-app-name.onrender.com
