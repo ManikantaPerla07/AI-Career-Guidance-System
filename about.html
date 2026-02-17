@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <title>About | CareerAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="theme.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+
+<!-- NAVBAR (same as index) -->
+<nav class="bg-white dark:bg-gray-800 shadow fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-indigo-600">CareerAI</h1>
+    <div class="space-x-6">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="text-indigo-500 font-semibold">About</a>
+      <a href="features.html">Features</a>
+      <a href="test.html">Test</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleTheme()" class="ml-4 px-3 py-1 rounded bg-indigo-600 text-white">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="pt-32 pb-20 max-w-6xl mx-auto px-6">
+  <h2 class="text-4xl font-extrabold mb-6">About CareerAI</h2>
+
+  <p class="text-lg leading-relaxed mb-6">
+    CareerAI is an <strong>AI-powered career guidance system</strong> designed to help students
+    and professionals identify the most suitable career paths using data-driven insights.
+  </p>
+
+  <p class="text-lg leading-relaxed mb-6">
+    Unlike traditional career tests, CareerAI uses a <strong>machine learning model trained on
+    aptitude scores, performance indicators, and behavioral clustering</strong> to generate
+    accurate and personalized career recommendations.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8 mt-10">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-2">🧠 How It Works</h3>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>Aptitude score analysis (8 dimensions)</li>
+        <li>Performance evaluation (academic & skills)</li>
+        <li>Cluster-based intelligence grouping</li>
+        <li>Gradient Boosting ML prediction</li>
+      </ul>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-2">🎯 Why CareerAI</h3>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>97%+ prediction accuracy</li>
+        <li>No guesswork or random advice</li>
+        <li>Real-world career alignment</li>
+        <li>Built with industry standards</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-200 dark:bg-gray-800 py-6 text-center">
+  © 2025 CareerAI. All rights reserved.
+</footer>
+
+</body>
+</html>
